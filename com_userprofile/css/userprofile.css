@@ -1,0 +1,37 @@
+#userprofiletable
+{
+  margin-top:7px;
+  border-collapse:collapse;
+  width:100%;
+}
+
+#userprofiletable tr th
+{
+  font-weight:bold; 
+  color:white;
+  border-width:1px;
+  border-style:solid;
+  background-color:orange;
+  border-color:black;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+#userprofiletable tr td
+{
+  border-width:1px;
+  border-style:solid;
+  padding:3px;
+}
+
+.userprofilekey
+{
+ font-weight:bold;
+ text-align:left; 
+}
+
+#userprofiledetailtable tr td
+{
+ padding:10px 10px 0px 10px; 
+ border-width:0px;
+}

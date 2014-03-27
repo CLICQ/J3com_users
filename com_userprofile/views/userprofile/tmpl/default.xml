@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <view title="UserProfile">
+		<message>UserProfile</message>
+	</view>
+		<config>
+		   <fields name="params">
+			<fieldset name="basic">
+				<field name="userCount" type="list" default="0" label="COM_USERPROFILE_USERCOUNT" description="COM_USERPROFILE_USERCOUNT_DESC">
+				  <option value="0">Alle</option>
+				  <option value="5">5</option>
+				  <option value="10">10</option>
+				  <option value="25">25</option>
+				  <option value="50">50</option>
+				</field>
+
+				<field name="showOnlyPublicPosts" type="radio" default="0" label="COM_USERPROFILE_ONLYPUBLIC" description="COM_USERPROFILE_ONLYPUBLIC_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showDetail" type="radio" default="0" label="COM_USERPROFILE_SHOWDETAIL" description="COM_USERPROFILE_SHOWDETAIL_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showHomepage" type="radio" default="0" label="COM_USERPROFILE_SHOWHOMEPAGE" description="COM_USERPROFILE_SHOWHOMEPAGE_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showAboutMe" type="radio" default="0" label="COM_USERPROFILE_SHOWABOUTME" description="COM_USERPROFILE_SHOWABOUTME_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="hideHomepage" type="radio" default="0" label="COM_USERPROFILE_HIDEHOMEPAGE" description="COM_USERPROFILE_HIDEHOMEPAGE_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showWrittenArticle" type="radio" default="0" label="COM_USERPROFILE_SHOWWRITTENARTICLE" description="COM_USERPROFILE_SHOWWRITTENARTICLE_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showEmail" type="radio" default="1" label="COM_USERPROFILE_SHOWEMAIL" description="COM_USERPROFILE_SHOWEMAIL_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showRegisterDate" type="radio" default="0" label="COM_USERPROFILE_SHOWREGISTERDATE" description="COM_USERPROFILE_SHOWREGISTERTYPE_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field name="showLastVisitDate" type="radio" default="0" label="COM_USERPROFILE_SHOWLASTVISITDATE" description="COM_USERPROFILE_SHOWLASTVISITDATE_DESC">
+  					<option value="0">COM_USERPROFILE_YES</option>
+  					<option value="1">COM_USERPROFILE_NO</option>
+				</field>
+				<field
+					name="usergroupids"
+					type="usergroup"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					label="COM_USERPROFILE_SHOWUSERSFROMGROUPS"
+					description="" >
+					<option value="">JOPTION_ALL_USERGROUPS</option>
+				</field>
+				<field name="userMask" type="text" default="[USERNAME]" label="COM_USERPROFILE_USERMASK" description="COM_USERPROFILE_USERMASK_DESC" />
+
+			</fieldset>
+		   </fields>
+		</config>
+</metadata>
